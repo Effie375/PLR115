@@ -1,0 +1,58 @@
+# Eργαστήριο 3
+
+## Άσκηση 1
+
+- Η κλίμακα που χρησιμοποιείται για τους τυφώνες, τους κατατάσσει σε 5 κατηγορίες σύμφωνα με τον παρακάτω πίνακα:
+
+|Κατηγορία|Ταχύτητα Ανέμου(σε κόμβους)|
+|:-|:-|
+|1|64 – 83|
+|2|84 – 96|
+|3|97 – 113|
+|4|114 – 134|
+|5|>=135|
+
+- Ένας κόμβος ισούται με 1.85 χλμ./ώρα.
+- Να γραφεί πρόγραμμα, το οποίο:
+  - θα διαβάζει την ταχύτητα του ανέμου.
+  - θα εμφανίζει τη λέξη «KATHGORIA» και δίπλα σε ποια κατηγορία ανήκει.
+  - θα μετατρέπει τους κόμβους σε χλμ./ώρα και θα εμφανίζει «XLM/ORA» και δίπλα πόσα χλμ./ώρα είναι ο άνεμος.
+
+```Java
+import java.util.Scanner;
+
+public class lab3 {
+
+	public static void main(String[] args) {
+		
+		float komvoi;
+		float xlm;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Dwse taxitita anemou se komvous: ");
+		komvoi = keyboard.nextFloat();
+		
+		if(komvoi >= 64 && komvoi <= 83) {
+			System.out.println("KATHGORIA 1");
+		}
+		else if(komvoi >= 84 && komvoi <= 96) {
+			System.out.println("KATHGORIA 2");
+		}
+		else if(komvoi >= 97 && komvoi <= 113) {
+			System.out.println("KATHGORIA 3");	
+		}
+		else if(komvoi >= 114 && komvoi <= 134) {
+			System.out.println("KATHGORIA 4");	
+		}
+		else if(komvoi >= 135) {
+			System.out.println("KATHGORIA 5");	
+		}
+		System.out.println("XLM/ORA: "+ komvoi * 1.85);
+	}
+
+}
+
+```
+
+## Άσκηση 2
