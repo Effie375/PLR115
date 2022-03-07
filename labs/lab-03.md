@@ -63,3 +63,35 @@ public class lab3 {
   - Θα εμφανίζει το μήνυμα «BATHMOI KELSIOU» και δίπλα την θερμοκρασία σε βαθμούς Κελσίου.
   - Θα εμφανίζει το μήνυμα «ZESTH» αν η θερμοκρασία είναι πάνω από 20 βαθμούς Κελσίου, «KRYO» αν η θερμοκρασία είναι μεταξύ 0 και 20 βαθμούς Κελσίου και «PAGONIA» αν είναι κάτω από 0 βαθμούς Κελσίου.
 	
+```Java
+import java.util.Scanner;
+
+public class lab3 {
+
+	public static void main(String[] args) {
+		
+		float F;
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Dwse thermokrasia(F): ");
+		F = keyboard.nextFloat();
+		
+		float C = (F-32)/(212-32)*100;
+		
+		System.out.printf("BATHMOI KELSIOU %f \n", C);
+		
+		if(C >= 0 && C <= 20) {
+			System.out.println("KRYO");
+		}
+		else if(C > 20) {
+			System.out.println("ZESTH");
+		}
+		else{
+			System.out.println("PAGWNIA");
+		}
+	}
+
+}
+
+```
