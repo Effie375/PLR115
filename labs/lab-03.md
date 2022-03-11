@@ -23,7 +23,7 @@
 ```Java
 import java.util.Scanner;
 
-public class lab3 {
+public class Main {
 
 	public static void main(String[] args) {
 		
@@ -69,32 +69,29 @@ public class lab3 {
 ```Java
 import java.util.Scanner;
 
-public class lab3 {
+public class Main {
+    public static void main(String[] args) {
+        float F;
 
-	public static void main(String[] args) {
-		
-		float F;
-		
-		Scanner keyboard = new Scanner(System.in);
-		
-		System.out.println("Dwse thermokrasia(F): ");
-		F = keyboard.nextFloat();
-		
-		float C = (F-32)/(212-32)*100;
-		
-		System.out.printf("BATHMOI KELSIOU %f \n", C);
-		
-		if(C >= 0 && C <= 20) {
-			System.out.println("KRYO");
-		}
-		else if(C > 20) {
-			System.out.println("ZESTH");
-		}
-		else{
-			System.out.println("PAGWNIA");
-		}
-	}
+        Scanner keyboard = new Scanner(System.in);
 
+        System.out.println("Dwse thermokrasia(F): ");
+        F = keyboard.nextFloat();
+
+        float C = (F-32)/(212-32)*100;
+
+        System.out.printf("BATHMOI KELSIOU %f \n", C);
+
+        if(C >= 0 && C <= 20) {
+            System.out.println("KRYO");
+        }
+        else if(C > 20) {
+            System.out.println("ZESTH");
+        }
+        else{
+            System.out.println("PAGWNIA");
+        }
+    }
 }
 
 ```
