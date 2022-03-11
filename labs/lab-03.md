@@ -24,35 +24,33 @@
 import java.util.Scanner;
 
 public class Main {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		
-		float komvoi;
-		float xlm;
-		
-		Scanner keyboard = new Scanner(System.in);
-		
-		System.out.println("Dwse taxitita anemou se komvous: ");
-		komvoi = keyboard.nextFloat();
-		
-		if(komvoi >= 64 && komvoi <= 83) {
-			System.out.println("KATHGORIA 1");
-		}
-		else if(komvoi >= 84 && komvoi <= 96) {
-			System.out.println("KATHGORIA 2");
-		}
-		else if(komvoi >= 97 && komvoi <= 113) {
-			System.out.println("KATHGORIA 3");	
-		}
-		else if(komvoi >= 114 && komvoi <= 134) {
-			System.out.println("KATHGORIA 4");	
-		}
-		else if(komvoi >= 135) {
-			System.out.println("KATHGORIA 5");	
-		}
-		System.out.println("XLM/ORA: "+ komvoi * 1.85);
-	}
+        float komvoi;
+        float xlm;
 
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.println("Dwse taxitita anemou se komvous: ");
+        komvoi = keyboard.nextFloat();
+
+        if(komvoi >= 64 && komvoi <= 83) {
+            System.out.println("KATHGORIA 1");
+        }
+        else if(komvoi >= 84 && komvoi <= 96) {
+            System.out.println("KATHGORIA 2");
+        }
+        else if(komvoi >= 97 && komvoi <= 113) {
+            System.out.println("KATHGORIA 3");	
+        }
+        else if(komvoi >= 114 && komvoi <= 134) {
+            System.out.println("KATHGORIA 4");	
+        }
+        else if(komvoi >= 135) {
+            System.out.println("KATHGORIA 5");	
+        }
+        System.out.println("XLM/ORA: "+ komvoi * 1.85);
+    }
 }
 
 ```
